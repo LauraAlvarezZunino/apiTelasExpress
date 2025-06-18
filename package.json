@@ -1,11 +1,12 @@
 {
+"type": "module",
   "name": "apitelas",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "--watch app.js",
+    "start": "node app.mjs",
+    "dev": "--watch app.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
