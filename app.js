@@ -23,8 +23,8 @@ app.post('/telas', (req, res) => {
     id: nextId++,
     nombre: req.body.nombre,
     descripcion: req.body.descripcion || '',
-    precioPorMetro: req.body.precioPorMetro,
-    cantidadDisponible: req.body.cantidadDisponible
+    precio_venta: req.body.precioPorMetro,
+    cantidad_disponible: req.body.cantidadDisponible
   };
 
   telas.push(nuevaTela);
@@ -36,8 +36,8 @@ app.put('/telas/:id', (req, res) => {
   if (!tela) return res.status(404).json({ error: 'Tela no encontrada' });
   tela.nombre = req.body.nombre;
   tela.descripcion = req.body.descripcion || '';
-  tela.precioPorMetro = req.body.precioPorMetro;
-  tela.cantidadDisponible = req.body.cantidadDisponible;
+  tela.precio_venta = req.body.precioPorMetro;
+  tela.cantidad_disponible = req.body.cantidadDisponible;
 
   res.json(tela);
 });
