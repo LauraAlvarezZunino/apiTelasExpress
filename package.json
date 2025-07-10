@@ -1,20 +1,16 @@
 {
-"type": "module",
+  "type": "module",
   "name": "apitelas",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "node app.mjs",
-    "dev": "--watch app.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
     "mysql2": "^3.9.2"
-
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
