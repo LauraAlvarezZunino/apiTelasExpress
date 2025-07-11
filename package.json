@@ -1,0 +1,16 @@
+{
+  "type": "module",
+ "name": "telasexpress",
+  "version": "1.0.0",  
+  "scripts": {
+    "start": "node app.mjs",
+    "dev": "nodemon app.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
